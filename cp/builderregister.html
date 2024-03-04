@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+    <meta charset="utf-8">
+    <title>Form-v10 by Colorlib</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/montserrat-font.css">
+    <link rel="stylesheet" type="text/css"
+        href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+        
+
+    <link rel="stylesheet" href="builderlogin.css" />
+    <meta name="robots" content="noindex, follow">
+    <script
+        nonce="48647c76-23b7-4c56-8fef-bac3b648341c">try { (function (w, d) { !function (w, x, y, z) { w[y] = w[y] || {}; w[y].executed = []; w.zaraz = { deferred: [], listeners: [] }; w.zaraz.q = []; w.zaraz._f = function (A) { return async function () { var B = Array.prototype.slice.call(arguments); w.zaraz.q.push({ m: A, a: B }) } }; for (const C of ["track", "set", "debug"]) w.zaraz[C] = w.zaraz._f(C); w.zaraz.init = () => { var D = x.getElementsByTagName(z)[0], E = x.createElement(z), F = x.getElementsByTagName("title")[0]; F && (w[y].t = x.getElementsByTagName("title")[0].text); w[y].x = Math.random(); w[y].w = w.screen.width; w[y].h = w.screen.height; w[y].j = w.innerHeight; w[y].e = w.innerWidth; w[y].l = w.location.href; w[y].r = x.referrer; w[y].k = w.screen.colorDepth; w[y].n = x.characterSet; w[y].o = (new Date).getTimezoneOffset(); if (w.dataLayer) for (const J of Object.entries(Object.entries(dataLayer).reduce(((K, L) => ({ ...K[1], ...L[1] })), {}))) zaraz.set(J[0], J[1], { scope: "page" }); w[y].q = []; for (; w.zaraz.q.length;) { const M = w.zaraz.q.shift(); w[y].q.push(M) } E.defer = !0; for (const N of [localStorage, sessionStorage]) Object.keys(N || {}).filter((P => P.startsWith("_zaraz_"))).forEach((O => { try { w[y]["z_" + O.slice(7)] = JSON.parse(N.getItem(O)) } catch { w[y]["z_" + O.slice(7)] = N.getItem(O) } })); E.referrerPolicy = "origin"; E.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(w[y]))); D.parentNode.insertBefore(E, D) };["complete", "interactive"].includes(x.readyState) ? zaraz.init() : w.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document) } catch (e) { throw fetch("/cdn-cgi/zaraz/t"), e; };</script>
+</head>
+
+<body class="form-v10">
+    <header>
+        <nav>
+            <div class="logo">
+                Niwara
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">Help</a>
+            </div>
+        </nav>
+    </header>
+    <div class="page-content">
+        <div class="form-v10-content">
+            <form class="form-detail" action="#" method="post" id="myform">
+                <div class="form-left">
+                    <h2>General Infomation</h2>
+                    <div class="form-row">
+                        <select name="title">
+                            <option class="option" value="title">Project Title</option>
+                            <option class="option" value="businessman">Ujwal Dham Project</option>
+                            <option class="option" value="reporter">Project 2</option>
+                            <option class="option" value="secretary">Project 3</option>
+                        </select>
+                        <span class="select-btn">
+                            <i class="zmdi zmdi-chevron-down"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row form-row-1">
+                            <input type="text" name="first_name" id="first_name" class="input-text"
+                                placeholder="First Name" required>
+                        </div>
+                        <div class="form-row form-row-2">
+                            <input type="text" name="last_name" id="last_name" class="input-text"
+                                placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <select name="position">
+                            <option value="position">Position</option>
+                            <option value="director">Director</option>
+                            <option value="manager">Manager</option>
+                            <option value="employee">Employee</option>
+                        </select>
+                        <span class="select-btn">
+                            <i class="zmdi zmdi-chevron-down"></i>
+                        </span>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="company" class="company" id="company" placeholder="Company" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row form-row-3">
+                            <input type="text" name="business" class="business" id="business"
+                                placeholder="Business Arena" required>
+                        </div>
+                        <div class="form-row form-row-4">
+                            <select name="employees">
+                                <option value="employees">Employees</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="colleague">Colleague</option>
+                                <option value="associate">Associate</option>
+                            </select>
+                            <span class="select-btn">
+                                <i class="zmdi zmdi-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-right">
+                    <h2>Contact Details</h2>
+                    <div class="form-row">
+                        <input type="text" name="street" class="street" id="street" placeholder="Street + Nr" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="additional" class="additional" id="additional"
+                            placeholder="Additional Information" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row form-row-1">
+                            <input type="text" name="zip" class="zip" id="zip" placeholder="Zip Code" required>
+                        </div>
+                        <div class="form-row form-row-2">
+                            <select name="place">
+                                <option value="place">Place</option>
+                                <option value="Street">Street</option>
+                                <option value="District">District</option>
+                                <option value="City">City</option>
+                            </select>
+                            <span class="select-btn">
+                                <i class="zmdi zmdi-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <select name="country">
+                            <option value="country">Country</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="India">India</option>
+                        </select>
+                        <span class="select-btn">
+                            <i class="zmdi zmdi-chevron-down"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row form-row-1">
+                            <input type="text" name="code" class="code" id="code" placeholder="Code +" required>
+                        </div>
+                        <div class="form-row form-row-2">
+                            <input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="your_email" id="your_email" class="input-text" required
+                            pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
+                    </div>
+                    <div class="form-checkbox">
+                        <label class="container">
+                            <p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
+                            <input type="checkbox" name="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="form-row-last">
+                        <input type="submit" name="register" class="register" value="Register Badge">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+        integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+        data-cf-beacon='{"rayId":"85149cee3e9af472","version":"2024.2.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

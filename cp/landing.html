@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.142)), 
+                        url('B6.jpg');
+            background-size: cover;
+            position: relative;
+        }
+
+        nav {
+            width: 100%;
+            height: 65px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: sans-serif;
+            padding: 0 20px;
+        }
+
+        .logo {
+            padding: 5px 10px;
+            font-size: 2.09em;
+            letter-spacing: 1.15px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            word-spacing: 1px;
+            font-size: 1em;
+            position: relative;
+            font-family: sans-serif;
+        }
+
+        .menu a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+
+        .menu a:hover:before {
+            width: 90%;
+        }
+
+        .h-txt {
+            max-width: 325px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .h-txt span {
+            letter-spacing: 1px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            color:indianred;
+        }
+
+        .h-txt h3 {
+            font-size: 2em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .h-txt a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            font-size: 1em;
+            background: indianred;
+            border-radius: 4px;
+            margin-top: 10px;
+            display: inline-block;
+            transition: 0.4s;
+        }
+        .h-txt a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Niwara
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">Help</a>
+            </div>
+        </nav>
+        <section class="h-txt">
+            <span>Welcome</span>
+            <h3>Let's Build a Home Together</h3>
+            <br>
+            <a href="builderlogin.html">Builder</a>
+            <a href="employeelogin.html">Employee</a>
+        </section>
+    </header>
+</body>
+</html>
